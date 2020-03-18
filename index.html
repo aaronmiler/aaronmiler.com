@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<!-- Main -->
+<div id="main">
+
+
+  <!-- Two -->
+  <section id="two">
+    <div class="container">
+      <h3>About</h3>
+      <p>
+        Full Stack Ruby on Rails Senior Software Engineer with 7+ years
+        experience (6 years remote) who has consistently delivered user-friendly
+        and performant enterprise-grade products. A self-starter and team-player
+        who is always looking for the best way to solve problems without sacrificing
+        code quality and time. Has designed and managed scalable software solutions
+        on AWS including setting up high-availability, fail-safe procedures to prevent
+         customer disruption and data loss. Experience creating B2B and B2C software solutions
+         for K-12 Education and E-Commerce companies.
+      </p>
+      <ul class="feature-icons">
+        <li class="icon solid fa-gem">7+ years experience designing, building, deploying, and managing Ruby on Rails applications</li>
+        <li class="icon solid fa-code">4+ years experience building interactive frontends with asynchronous persistence using React, Slim, SCSS, and Webpack</li>
+        <li class="icon solid fa-rocket">Experience launching new products and adding features to existing products as both an implementation lead and as a dev team member</li>
+        <li class="icon solid fa-cogs">Implemented Ruby backend processes that import, validate, and transform structured markdown, Common Cartridge, and loosely structured JSON</li>
+        <li class="icon solid fa-robot">Able to work autonomously to deliver quality results given high-level requirements in weekly standups</li>
+        <li class="icon solid fa-cloud">Deployed and managed scalable products to AWS using zero-downtime deploy patterns and disposable servers</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Three -->
+  <section id="projects">
+    <div class="container">
+      <h3>Projects</h3>
+      <div class="features">
+        {% include projects.html %}
+      </div>
+    </div>
+  </section>
+
+  <section id="side-projects">
+    <div class="container">
+      <h3>Side Projects</h3>
+      <p>Some things I've thrown together in my spare time</p>
+      <div class="features">
+        {% include side_projects.html %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Four -->
+  <section id="four">
+    <div class="container">
+      <h3>Contact Me</h3>
+      <p>Let's chat! Find me on any of the social networks to the right, or use the form below to send me a quick note!</p>
+      <form method="post" netlify>
+        <div class="row gtr-uniform">
+          <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+          <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+          <div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+          <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+          <div class="col-12">
+            <ul class="actions">
+              <li><input type="submit" class="primary" value="Send Message" /></li>
+              <li><input type="reset" value="Reset Form" /></li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</div>

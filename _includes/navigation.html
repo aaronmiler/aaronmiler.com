@@ -1,0 +1,24 @@
+<nav id="nav">
+  <ul>
+    {% if page.url != '/' %}
+    <li><a href="/">Home</a></li>
+    {% endif %}
+    <li><a href="#one">About</a></li>
+    
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#side-projects">Side Projects</a></li>
+    <li><a href="#four">Contact</a></li>
+  </ul>
+</nav>
+
+<footer>
+  <ul class="icons">
+    {% if site.github_user %}
+    <li><a class='icon brands fa-github' href="http://github.com/{{ site.github_user }}" title="Github Profile"><i class="icon-github-sign social-navbar"></i></a></li>
+    {% endif %}
+    {% if site.linkedin_user %}
+    <li><a class='icon brands fa-linkedin' href="http://linkedin.com/in/{{ site.linkedin_user }}" title="Linkedin Profile"><i class="icon-linkedin-sign social-navbar"></i></a></li>
+    {% endif %}
+    <li><a href="mailto:aaron@aaronmiler.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+  </ul>
+</footer>
